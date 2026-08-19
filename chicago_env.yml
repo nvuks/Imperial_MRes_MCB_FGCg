@@ -1,0 +1,19 @@
+name: chicago
+channels:
+  - conda-forge
+  - bioconda
+  - r
+  - imperial-college-research-computing
+  - omnia
+dependencies:
+  - r-base
+  - mysql
+  - libtiff
+  - libpng
+  - pkg-config
+  - libcurl
+  - r-arrow
+  - coincbc
+  - ipykernel
+  - bedops
+prefix: /rds/general/user/mikhails/home/anaconda3/envs/chicago

@@ -1,0 +1,8 @@
+Run as:
+
+mkdir -p /rds/general/project/lms-spivakov-analysis/live/TRIP-4C_pilot/pipeline_run1c # replace pipeline_run1c with your custom folder accordingly throughout
+cd /rds/general/project/lms-spivakov-analysis/live/TRIP-4C_pilot/pipeline_run1c
+
+qsub -v R1_FASTQ_GZ="/rds/general/project/lms-spivakov-analysis/live/TRIP-4C_pilot/TRIP-4C_SOX2_rep-1_sequencing/4C_SOX2_R1_S1_L001_R1_001.fastq.gz",R2_FASTQ_GZ="/rds/general/project/lms-spivakov-analysis/live/TRIP-4C_pilot/TRIP-4C_SOX2_rep-1_sequencing/4C_SOX2_R1_S1_L001_R2_001.fastq.gz",WHITELIST="/rds/general/project/lms-spivakov-analysis/live/TRIP-4C_pilot/TRIP-4C_SOX2_rep-1_sequencing/whitelist.tsv",BOWTIE2_INDEX="/rds/general/project/lms-spivakov-raw/live/bowtie_index/mm10",SCRIPT_DIR="/rds/general/project/lms-spivakov-analysis/live/TRIP-4C_pilot/pipeline_v1",OUTPUT_DIR="/rds/general/project/lms-spivakov-analysis/live/TRIP-4C_pilot/pipeline_run1c",FRAG_LIB="/rds/general/project/lms-spivakov-analysis/live/TRIP-4C_pilot/fragment_library/mm10_NlaIII_DpnII_50bp.csv" /rds/general/project/lms-spivakov-analysis/live/TRIP-4C_pilot/pipeline_v1/run_full_pipeline_pbs.sh
+
+See ../TRIP-4C_SOX2_rep-1_sequencing/README for details
